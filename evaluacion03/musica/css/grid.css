@@ -1,0 +1,52 @@
+#logo, #titulo {
+  text-align: center;
+}
+
+#notaPrincipal {
+  margin:10px;
+}
+
+#notaPrincipal [class*="col-"] {
+  padding:0;
+}
+
+#comentarioNotaPrincipal {
+  margin:15px;
+}
+
+#menuSocial  {
+  width:fit-content;
+  margin:0 auto;
+  padding:0;
+}
+
+#menuSocial .nav-link {
+  padding:0 5px 0 0;
+}
+
+#menuPrincipal {
+  width:100%;
+  padding:0;
+}
+
+#menuPrincipal a {
+  padding:10px 20px 10px 20px;
+}
+
+#menuPrincipal a:hover {
+  background-color:#17a2b8;
+}
+
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.comentario {
+  margin:10px;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

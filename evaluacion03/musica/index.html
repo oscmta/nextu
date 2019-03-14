@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Musical</title>
+    <meta name="description" content="Blog musical orientado a compartir imagenes, noticias, eventos, opiniones y contenido adicional referente al múndo de la musica">
+    <meta name="author" content="Oscar Torres">
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="css/grid.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <!--Cabecera -->
+      <header>
+        <div class="page-header">
+          <div class="row align-items-center">
+            <!--Logo -->
+            <div class="col-lg-3 col-md-6 text-center"><img width="200px" src="images/bass-h.svg" alt="Logo"></div>
+            <div class="col-lg-6 col-md-6"></div>
+            <!--Menu redes sociales -->
+            <div class="col-lg-3 col-md-12">
+              <nav class="navbar navbar-expand" id="menuSocial">
+                <div class="collapse navbar-collapse" role="navigation">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img width="32px" src="images/facebook.svg" alt="Facebook Page"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img width="32px" src="images/twitter.svg" alt="Twitter Page"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img width="32px" src="images/instagram.svg" alt="Instagram Page"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img width="32px" src="images/linkedin.svg" alt="Linkedin Page"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img width="32px" src="images/whatsapp.svg" alt="Whatsapp Number"></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+        </div>
+      </header>
+      <!--Menu principal -->
+      <div class="row" role="navigation">
+        <nav class="navbar navbar-expand-md navbar-light bg-dark" id="menuPrincipal">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Grupos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Top 10</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Letras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Acordes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--notas -->
+      <div class="row">
+        <!-- columna izquierda -->
+        <div class="col-md-8">
+          <!-- nota 01 -->
+          <div class="card mb-3">
+            <div class="row no-gutters" id="notaPrincipal">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Los Ramones de Gira por U.S.A.</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris ipsum, molestie vel odio in, auctor malesuada leo. Praesent venenatis tortor non est placerat malesuada. In hac habitasse platea dictumst. Morbi massa neque, tincidunt vel tincidunt et, mollis quis leo. Vestibulum nulla metus, fermentum et arcu ac, vestibulum ullamcorper turpis. Cras aliquam nulla a dui convallis hendrerit. Donec leo libero, dictum sed tincidunt vitae, maximus sit amet mi. Fusce erat ipsum, vestibulum at vestibulum nec, sollicitudin ut ligula. Nunc sem augue, sodales vitae vehicula ac, consequat sed ante. Vivamus tristique, odio ac tincidunt posuere, erat ipsum euismod felis, eget hendrerit mi risus id lectus. Ut aliquet libero id maximus pellentesque.</p>
+                  <p class="card-text"><small class="text-muted">Actualizado hace 2 días</small></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="images/foto_01.png" class="card-img" alt="...">
+              </div>
+            </div>
+            <form  id="comentarioNotaPrincipal">
+              <div class="form-group">
+                <input type="text" class="form-control" id="comentarioNuevo" aria-describedby="comentarioNuevo" placeholder="ingresa el texto de tu comentario...">
+              </div>
+              <button type="submit" class="btn btn-dark">Agregar Comentario</button>
+            </form>
+          </div>
+          <!-- nota 02 -->
+          <div class="card mb-3">
+            <div class="row no-gutters" id="notaPrincipal">
+              <div class="col-md-4">
+                <img src="images/foto_04.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Rolling Stones en Portada</h5>
+                  <p class="card-text">Phasellus dolor odio, consectetur sed commodo ut, sagittis non sapien. In semper libero eget lorem varius tempus. Etiam mollis volutpat lacus eu tempus. Ut maximus neque nibh, quis sagittis velit porta lacinia. Sed interdum lacus justo, id mollis dui rutrum a. Duis augue mauris, maximus id hendrerit id, iaculis eget est. Nunc tempor ultrices nisi eget eleifend. Integer sit amet lobortis justo, eget tincidunt ipsum.</p>
+                  <p class="card-text"><small class="text-muted">Actualizado hace 1 día</small></p>
+                </div>
+              </div>
+            </div>
+            <form  id="comentarioNotaPrincipal">
+              <div class="form-group">
+                <input type="text" class="form-control" id="comentarioNuevo" aria-describedby="comentarioNuevo" placeholder="ingresa el texto de tu comentario...">
+              </div>
+              <button type="submit" class="btn btn-dark">Agregar Comentario</button>
+            </form>
+          </div>
+          <!-- nota 03 -->
+          <div class="card">
+            <img src="images/foto_02.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gran Festival de Rock</h5>
+              <p class="card-text">Sed gravida, diam ac pharetra rhoncus, diam massa sagittis diam, ut luctus orci lectus ut mi. Proin tincidunt arcu congue odio placerat venenatis. Donec et scelerisque urna, vel efficitur turpis. Maecenas feugiat, est non interdum sodales, nibh mauris malesuada neque, a lacinia mi enim vel quam. Quisque malesuada viverra ipsum. Donec at pellentesque erat. Nulla nec ultricies lectus. Pellentesque vitae elit id orci semper gravida vel id ipsum. Curabitur tincidunt pretium gravida.</p>
+              <p class="card-text"><small class="text-muted">Actualizado hace 3 minutos</small></p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="comentarioNuevo" aria-describedby="comentarioNuevo" placeholder="ingresa el texto de tu comentario...">
+                </div>
+                <button type="submit" class="btn btn-dark">Agregar Comentario</button>
+              </form>
+            </div>
+          </div>
+          <!-- nota 04 -->
+          <div class="card">
+            <img src="images/foto_03.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nuevo disco de Foo Fighters</h5>
+              <p class="card-text">Etiam ante sapien, vulputate ac dapibus eu, egestas vel lacus. Nunc congue aliquam tortor, ut semper mi placerat non. Sed imperdiet velit ac gravida ultrices. Etiam non dapibus justo, non ullamcorper magna. Nam accumsan feugiat ipsum sed sagittis. Nam sit amet leo enim. Pellentesque mollis sem lacus, eget mattis enim fringilla vitae. Proin turpis magna, lacinia sit amet tincidunt sed, finibus porttitor felis. Donec eu vestibulum libero, ut posuere nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus gravida eleifend feugiat. Vestibulum ac sem enim.</p>
+              <p class="card-text"><small class="text-muted">Actualizado hace 1 hora</small></p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="comentarioNuevo" aria-describedby="comentarioNuevo" placeholder="ingresa el texto de tu comentario...">
+                </div>
+                <button type="submit" class="btn btn-dark">Agregar Comentario</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--lateral derecho -->
+        <div class="col-md-4 bg-light">
+          <!--buscador -->
+          <nav class="navbar navbar-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </nav>
+          <br/>
+          <!--opciones de busqueda -->
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Últimas noticias</a>
+            <a href="#" class="list-group-item list-group-item-action">Los más leidos del día</a>
+            <a href="#" class="list-group-item list-group-item-action">Los más leidos de la semana</a>
+            <a href="#" class="list-group-item list-group-item-action">Los más leidos del mes</a>
+            <a href="#" class="list-group-item list-group-item-action">Géneros Musicales</a>
+            <a href="#" class="list-group-item list-group-item-action">Rock</a>
+            <a href="#" class="list-group-item list-group-item-action">Pop</a>
+            <a href="#" class="list-group-item list-group-item-action">Reggae</a>
+            <a href="#" class="list-group-item list-group-item-action">Country</a>
+            <a href="#" class="list-group-item list-group-item-action">Clásico</a>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div> <!-- /container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.nav-wrapper li a {
+  width:180px;
+}
+
+.clearfix {
+  clear:both !important
+  display:block;
+}

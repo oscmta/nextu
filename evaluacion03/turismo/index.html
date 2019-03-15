@@ -9,40 +9,127 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <div class="container principal">
       <!--Cabecera -->
       <header>
-        <nav class='light-green lighten-2'>
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo clearfix"><img src='images/logo.png' alt="Logo principal" width="200px"></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Inicio</a></li>
-              <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Estuve en</a></li>
-              <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Mejores viajes</a></li>
-              <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Recomendaciones</a></li>
+        <div class="row light-green">
+          <div class="col s12 m12 xl2 center-align logo"><img src='images/logo.png' alt="Logo principal" width="150px"></div>
+          <div class="col s12 m12 xl10">
+            <!--Menu principal -->
+            <nav class='light-green z-depth-0'>
+              <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Inicio</a></li>
+                  <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Estuve en</a></li>
+                  <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Mejores viajes</a></li>
+                  <li><a class="waves-effect waves-light btn light-green darken-2 rounded">Recomendaciones</a></li>
+                </ul>
+              </div>
+              <div class="nav-content">
+                <span class="nav-title">Cuanto más lejos voy, más me acerco a mí mismo</span>
+              </div>
+            </nav>
+            <ul class="sidenav light-green" id="mobile-demo">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Estuve en</a></li>
+              <li><a href="#">Mejores viajes</a></li>
+              <li><a href="#">Recomendaciones</a></li>
             </ul>
-            <div class='clearfix'></div>
           </div>
-          <div class="nav-content">
-            <span class="nav-title">Cuanto más lejos voy, más me acerco a mí mismo</span>
-          </div>
-        </nav>
+        </div>
+
       </header>
       <!--medio -->
       <div class="row">
-          <div class="col s12 m1">menu izquierda</div>
+          <!-- menu redes sociales  -->
+          <div class="col s12 m1">
+            <nav id="menuSocial" class="z-depth-0">
+              <div class="nav-wrapper" role="navigation">
+                <ul>
+                  <li><a href="#"><img width="32px" src="images/facebook.svg" alt="Facebook Page"></a></li>
+                  <li><a href="#"><img width="32px" src="images/twitter.svg" alt="Twitter Page"></a></li>
+                  <li><a href="#"><img width="32px" src="images/instagram.svg" alt="Instagram Page"></a></li>
+                  <li><a href="#"><img width="32px" src="images/youtube.svg" alt="Youtube Channel"></a></li>
+                  <li><a href="#"><img width="32px" src="images/pinterest.svg" alt="Pinterest Board"></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- zona galeria  -->
           <div class="col s12 m11">
-            fotos
+            <div class="row galeria">
+              <div class="col s12 m4">
+                <img src="images/galeria_01.jpg" class="materialboxed z-depth-2" width="100%"/>
+                <img src="images/galeria_03.jpg" class="materialboxed z-depth-2" width="100%"/>
+              </div>
+              <div class="col s12 m4">
+                <img src="images/galeria_02.jpg" class="materialboxed z-depth-2" width="100%"/>
+              </div>
+              <div class="col s12 m4">
+                <img src="images/galeria_04.jpg" class="materialboxed z-depth-2" width="100%"/>
+                <img src="images/galeria_05.jpg" class="materialboxed z-depth-2" width="100%"/>
+              </div>
+            </div>
           </div>
       </div>
       <!--contenido -->
       <div class="row">
-          <div class="col s12 m8">menu izquierda</div>
-          <div class="col s12 m4">autor</div>
+          <div class="col s12 m8">
+            <!-- nota 01  -->
+            <div class="card large">
+              <div class="card-image">
+                <img src="images/nota_01.jpg">
+                <span class="card-title">Viaje al mundo</span>
+              </div>
+              <div class="card-content">
+                <p>Etiam consequat facilisis ante vitae pretium. Donec in dui ex. Vestibulum vestibulum lobortis odio, et cursus ante lacinia eget. Morbi nibh tellus, malesuada a risus a, ullamcorper posuere est. Cras nibh ante, ultrices eu lacus sed, posuere luctus mauris. Etiam vel augue lorem. Ut efficitur, risus sit amet auctor faucibus, libero eros suscipit urna, sit amet egestas sem nisl nec massa.</p>
+              </div>
+              <div class="card-action">
+                <div class="input-field col s12">
+                  <textarea id="comentario1" class="materialize-textarea"></textarea>
+                  <label for="comentario1">Ingrese su comentario...</label>
+                </div>
+                <a class="waves-effect waves-light btn-large light-green">agregar comentario</a>
+              </div>
+            </div>
+            <!-- nota 02  -->
+            <div class="card large">
+              <div class="card-image">
+                <img src="images/nota_02.jpg">
+                <span class="card-title">Seleccionando Destinos</span>
+              </div>
+              <div class="card-content">
+                <p>Morbi nulla nulla, laoreet ac nibh sit amet, venenatis faucibus arcu. Morbi sit amet felis a elit tincidunt cursus. Nunc ut congue ligula, a fermentum arcu. Mauris ut augue vitae est suscipit congue. Proin ac vehicula nibh. Pellentesque ultrices lorem quis congue sodales. Fusce id pharetra mi. In hac habitasse platea dictumst.</p>
+              </div>
+              <div class="card-action">
+                <div class="input-field col s12">
+                  <textarea id="comentario2" class="materialize-textarea"></textarea>
+                  <label for="comentario2">Ingrese su comentario...</label>
+                </div>
+                <a class="waves-effect waves-light btn-large light-green">agregar comentario</a>
+              </div>
+            </div>
+          </div>
+          <!-- Autor -->
+          <div class="col s12 m4">
+            <div class="card autor">
+                    <div class="card-image">
+                      <img src="images/avatar_01.png">
+                      <span class="card-title">Autor</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Vestibulum rutrum justo in mollis scelerisque. Sed vulputate, metus maximus semper efficitur, quam lacus vestibulum lacus, id pellentesque libero libero nec eros. Sed nibh tellus, aliquam sed tortor at, blandit vestibulum sem. Integer vel ex et nisl placerat mattis. Nam blandit sollicitudin condimentum. Vivamus finibus, erat et aliquet elementum, turpis nulla vehicula turpis, sit amet rhoncus quam lacus in sem. Curabitur dignissim felis vel nibh convallis bibendum. Phasellus velit tortor, gravida id rhoncus nec, mattis nec neque. Proin ultrices ornare nisi, et accumsan sem molestie ut. Curabitur semper, nunc vel semper rutrum, nisl nisi vehicula tellus, convallis lobortis dolor mi nec augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec auctor lorem mattis, feugiat justo id, fringilla leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec diam metus, aliquam at aliquet malesuada, euismod non dolor. Nullam lobortis, quam eget ornare ullamcorper, quam risus auctor libero, sit amet tristique quam felis eu nulla. Pellentesque aliquam accumsan nulla sit amet porttitor.</p>
+                    </div>
+            </div>
+          </div>
       </div>
     </div> <!-- /container -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

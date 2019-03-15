@@ -1,8 +1,44 @@
-.nav-wrapper li a {
-  width:180px;
+body {
+  background-image: url("../images/fondo.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.clearfix {
-  clear:both !important
-  display:block;
+.logo {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.galeria img {
+  margin-bottom: 15px;
+}
+
+.autor {
+  padding-top: 20px;
+}
+
+.autor img {
+  border-radius: 50% !important;
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.autor .card-title {
+  color:#333 !important;
+}
+
+#menuSocial li, #menuSocial img , #menuSocial a {
+  padding:0;
+  margin:0;
+  line-height: normal;
+}
+
+#menuSocial {
+  background-color:inherit;
+}
+
+#menuSocial a {
+  padding:10px;
 }
